@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   # get '/admin/comments/moderate', to: 'comments#moderate'
   # or just do the below:
 
-  scope '/admin' do
+  scope '/admin', module: 'admin' do
     resources :stats, only: [:index]
   end
 

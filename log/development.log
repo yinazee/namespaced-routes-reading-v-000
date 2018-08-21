@@ -4512,3 +4512,5 @@ ActionController::RoutingError (No route matches [GET] "/stats"):
   [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Links! Click Links!"], ["description", "  Last night I dreamt we simply need to realize to be so competitive.\n  Does the responsibility lie with Links, you probably wonder...\n  The answer is here. Right here. About the time I broke up with my\n  ex I was totally into music. Whatever. So that's that.\n  But something wasn't right. I stumbled upon a giant banana.\n"], ["author_id", 6], ["created_at", "2018-08-21 15:08:54.961902"], ["updated_at", "2018-08-21 15:08:54.961902"]]
   [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
   [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "posts" SET "created_at" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["created_at", "2018-08-20 00:00:00.000000"], ["updated_at", "2018-08-21 15:08:54.965893"], ["id", 6]]
+  [1m[35m (2.3ms)[0m  commit transaction
